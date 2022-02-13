@@ -1,28 +1,28 @@
 # COLA-DINAMICA
  //IMPRIMIR 
- Nodo temporal=Cola;
+ Nodo temporary=Cola;
 
-        while(temporal.siguiente!=null)
+        while(temporary.next!=null)
 
         {
-            temporal=temporal.siguiente;
+            temporary=temporary.next;
           
             
         }
-        TXTimprimir.setText(TXTimprimir.getText()+temporal.dato.toString()+" ");
+        TXTimprimir.setText(TXTimprimir.getText()+temporary.data.toString()+" ");
         
         //INSERTAR
          
-         Nodo nuevoNodo=new Nodo(TXTinsertar.getText());
+         Nodo newNodo=new Nodo(TXTinsert.getText());
        
-        if(Cola.dato=="")
+        if(tail.data=="")
         {
-            Cola=nuevoNodo;
+            tail=newNodo;
         }
         else{
-            nuevoNodo.siguiente=Cola;
-            Cola=nuevoNodo;
+            newNodo.next=tail;
+            tail=newNodo;
         } 
         
-        TXTinsertar.setText("");
+        TXTinsert.setText("");
         
